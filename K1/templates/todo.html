@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/todo.css">
+    <script src="/static/todo.js"></script>
+</head>
+<body>
+    <div class="container">
+	<div class="row">
+        <div class="col-md-4"></div>
+	    <div class="col-md-4">
+            <h2>To Do List</h2>
+		    <form name="checkListForm">
+			    <input type="text" name="checkListItem" placeholder="Add Item..."/>
+		    </form>
+	    	 <button type="button" id="add" class="btn btn-info">Add</button>
+             <button type="button" id="clear" title="Clear checked items" class="btn btn-default">clear</button>
+		    <br/><br/>
+		    <div class="list"></div>
+        </div>
+        <div class="col-md-4"></div>
+	</div>
+</div>
+</body>
+</html>
