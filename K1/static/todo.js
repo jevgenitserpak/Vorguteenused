@@ -42,6 +42,7 @@ $(document).ready(function(){
         $(this).css("cursor","default");
         //Strike through clicked item while giving it a class of done so it will be affected by the clear
         $(this).wrapInner('<strike class="done"></strike>');
+        $(this).addClass('done');
         //Add the X glyphicon
         $(this).append(" " + '<span class="glyphicon glyphicon-remove done" aria-hidden="true"></span>');
         //Stops checked off items from being clicked again
@@ -61,9 +62,7 @@ $(document).ready(function(){
                   todo:"" + $( this ).text()},
               success: function(data){
                   console.log(data);
-                  if (data != "False") {
-                      $(this).remove('.done');
-                  }
+                  //$(this).remove('.done');
               }
             });
         });
@@ -79,8 +78,10 @@ $(document).ready(function(){
                   todo:"" + $( this ).text()},
               success: function(data){
                   console.log(data);
+                  //$(this).removeAttr('class', 'new');
               }
             });
         });
+        location.reload();
     });
 });

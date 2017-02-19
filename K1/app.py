@@ -74,8 +74,8 @@ def add_data():
         cursor.execute("INSERT INTO todo (user_email, user_todo) VALUES ('" + email + "','" + todo + "')")
         conn.commit()
     except:
-        return False
-    return True
+        return "False"
+    return "True"
 
 
 @app.route('/remove', methods=['POST'])
@@ -85,11 +85,11 @@ def remove_data():
     conn = mysql.connect()
     cursor = conn.cursor()
     try:
-        cursor.execute("DELETE FROM todo WHERE user_email='" + email + "' and user_todo='" + todo + "')")
+        cursor.execute("DELETE FROM todo WHERE user_email='" + email + "' and user_todo='" + todo + "'")
         conn.commit()
     except:
-        return False
-    return True
+        return "False"
+    return "True"
 
 
 if __name__ == "__main__":
