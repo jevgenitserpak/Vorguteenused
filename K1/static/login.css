@@ -24,6 +24,11 @@ body, html {
     cursor: default;
 }
 
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 /*
  * Card component
  */

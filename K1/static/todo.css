@@ -1,0 +1,18 @@
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+.list {
+	font-family:"Trebuchet MS";
+    font-size:20px;
+	color:#000000;
+    cursor:pointer;
+}
+
+.mid {
+    display: inline;
+}
