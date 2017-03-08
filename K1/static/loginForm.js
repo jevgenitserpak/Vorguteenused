@@ -10,3 +10,7 @@ function changeToLogin() {
     document.getElementById("loginForm").style.display = 'block';
     document.getElementById("registerForm").style.display = 'none';
 }
+
+function saveUser() {
+    sessionStorage.setItem('user', document.getElementById('inputEmail').value);
+}

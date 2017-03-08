@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Python Flask Bucket List App</title>
-
-
+    <title>ToDo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
@@ -13,18 +12,21 @@
 <body>
     <div class="container">
 	<div class="row">
-        <div class="col-md-4"></div>
-	    <div class="col-md-4">
+        <div class="col-md-3"></div>
+	    <div class="col-md-6">
             <h2>To Do List</h2>
-		    <form name="checkListForm">
-			    <input type="text" name="checkListItem" placeholder="Add Item..."/>
-		    </form>
-	    	 <button type="button" id="add" class="btn btn-info">Add</button>
-             <button type="button" id="clear" title="Clear checked items" class="btn btn-default">clear</button>
+            <p>Do not forget to SAVE changes!</p>
+            <div class="mid">
+                <form name="checkListForm" style="display: inline">
+                    <input type="text" name="checkListItem" placeholder="Add Item..."/>
+                </form>
+                 <button type="button" id="add" class="btn btn-info" style="display: inline">Add</button>
+                 <button type="button" id="update" title="Clear checked items" class="btn btn-default" style="display: inline">Save</button>
+            </div>
 		    <br/><br/>
 		    <div class="list"></div>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
 	</div>
 </div>
 </body>

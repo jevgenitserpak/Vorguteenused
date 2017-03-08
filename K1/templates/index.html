@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Python Flask Bucket List App</title>
+    <title>ToDo List</title>
 
 
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,11 +12,13 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="header">Welcome to Online ToDo list manager!</h1>
         <div class="card card-container">
+
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
             <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
             <p id="profile-name" class="profile-name-card"></p>
-            <form id="loginForm" class="form-signin" action="/login" method="Get">
+            <form id="loginForm" class="form-signin" action="/login" method="Post">
                 <span id="reauth-email" class="reauth-email"></span>
                 <input type="email" id="inputEmail" class="form-control" name="inputEmail" placeholder="Email address" required autofocus>
                 <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
@@ -25,12 +27,12 @@
                         <input type="checkbox" value="remember-me"> Remember me
                     </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" onclick="saveUser();" type="submit">Sign in</button>
                 <a href="#" class="forgot-password" onClick="changeForm();">
                 Don't have account?
                 </a>
             </form><!-- /form -->
-            <form id="registerForm" class="form-register" action="/registerAccount" method="Post" style="display: none;">
+            <form id="registerForm" class="form-register" action="/register" method="Post" style="display: none;">
                 <span class="reauth-email"></span>
                 <input type="email" id="registerEmail" name="registerEmail" class="form-control" placeholder="Email address" required autofocus>
                 <input type="password" id="registerPassword" name="registerPassword" class="form-control" placeholder="Password" required>
