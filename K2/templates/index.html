@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Flask Bucket List App</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/search.css">
+    <script src="/static/search.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <h2>Lookup a city by a country!</h2>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="searchBox">
+                    <input id="firstName" type="text" placeholder="Insert a country name" class="form-control input-md"
+                           required="true">
+                    <button type="button" class="btn btn-info">Search</button>
+                </div>
+                <select class="form-control select">
+                    <option value="" disabled selected>Search a city</option>
+                </select>
+            </div>
+
+            <!-- https://maps.googleapis.com/maps/api/geocode/json?&address=tallinn -->
+        </div>
+
+    </div><!-- /container -->
+</body>
+</html>
