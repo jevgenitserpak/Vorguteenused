@@ -3,29 +3,39 @@
 <head>
     <title>Python Flask Bucket List App</title>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/search.css">
-    <script src="/static/search.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/search.css">
+    <script src="../static/search.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="search">
+        <
+        <div class="row search">
             <h2>Lookup a city by a country!</h2>
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="searchBox">
-                    <input id="firstName" type="text" placeholder="Insert a country name" class="form-control input-md"
+                    <input id="country" type="text" placeholder="Insert a country name" class="form-control input-md"
                            required="true">
-                    <button type="button" class="btn btn-info">Search</button>
+                    <button type="button" onclick="getCity();" class="btn btn-info">Search</button>
                 </div>
                 <select class="form-control select">
                     <option value="" disabled selected>Search a city</option>
                 </select>
             </div>
-
-            <!-- https://maps.googleapis.com/maps/api/geocode/json?&address=tallinn -->
         </div>
 
-    </div><!-- /container -->
+        <div class="row pictures">
+            <legend id="leg">Take a look at some cities</legend>
+            <div class="pics">
+                <img src="../static/tallinn.jpg" alt="tallinn" class="pic">
+                <img src="../static/newyork.jpg" alt="newyork" class="pic">
+                <img src="../static/dubai.jpg" alt="dubai" class="pic">
+                <img src="../static/paris.jpg" alt="dubai" class="pic">
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
 </body>
 </html>
