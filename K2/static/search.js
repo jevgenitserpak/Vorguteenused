@@ -21,6 +21,7 @@ function getCity() {
     });
 }
 
+
 $(document).ready(function(){
     $('legend').click(function(){
         $(".pics").fadeToggle("slow");
